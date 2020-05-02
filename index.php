@@ -31,7 +31,6 @@
 				<a href="post.php?id=<?php echo $result['id']; ?>">Read More</a>
 				</div>
 			</div>
-
 	    <?php } ?> <!--End While Loop-->
 
 		<!-- Pagination -->

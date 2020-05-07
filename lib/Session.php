@@ -19,7 +19,7 @@ class Session
     }
 
     public static function checkSession(){
-        selft::init();
+        self::init();
         if (self::get('login') == false) {
            self::destroy();
            header('Location:login.php');

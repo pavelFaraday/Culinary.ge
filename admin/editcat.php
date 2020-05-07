@@ -8,7 +8,6 @@ if (!isset($_GET['catid']) || $_GET['catid'] == NULL) {
 } else {
     $id = $_GET['catid'];
 }
-
 ?>
 
 <div class="grid_10">

@@ -23,14 +23,18 @@
                             <td>
                                 <select id="select" name="select">
                                     <option>Select Category</option>
-                                    <option value="1">Category One</option>
-                                    <option value="2">Category Two</option>
-                                    <option value="3">Cateogry Three</option>
+                                <?php 
+                                    $query = "select * from tbl_category";
+                                    $category = $db->select($query);
+                                    if ($category) {
+                                       while ($result = $category->fetch_assoc()) {
+                                ?>
+                                    <option value="<?php echo $result['id']; ?>"><?php echo $result['name']; ?></option>
+                                <?php } } ?>
                                 </select>
                             </td>
                         </tr>
-                   
-                    
+
                         <tr>
                             <td>
                                 <label>Date Picker</label>

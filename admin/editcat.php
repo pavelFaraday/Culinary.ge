@@ -2,38 +2,37 @@
 <?php include 'inc/sidebar.php'?>
 
 <?php 
-if (!isset($_GET['catid']) || $_GET['catid'] == NULL) {
-    echo "<script>window.location = 'catlist.php';</script>";
-    // header("Location:catlist.php");
-} else {
-    $id = $_GET['catid'];
-}
+    if (!isset($_GET['catid']) || $_GET['catid'] == NULL) {
+        echo "<script>window.location = 'catlist.php';</script>";
+        // header("Location:catlist.php");
+    } else {
+        $id = $_GET['catid'];
+    }
 ?>
 
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Add New Category</h2>
-        <div class="block copyblock">
-             
+        <h2>Update Category</h2>
+        <div class="block copyblock">           
 <?php 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['name'];
-    $name = mysqli_real_escape_string($db->link, $name);
-    if (empty($name)) {
-        echo "<span class='error'>Field must not be empty !</span>";
-    } else {
-        $query = "UPDATE tbl_category
-                SET
-                name = '$name'
-                WHERE id = '$id'";
-        $updated_row = $db->update($query);
-        if ($updated_row) {
-            echo "<span class='success'>Category Updated Successfully</span>";
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $name = $_POST['name'];
+        $name = mysqli_real_escape_string($db->link, $name);
+        if (empty($name)) {
+            echo "<span class='error'>Field must not be empty !</span>";
         } else {
-            echo "<span class='error'>ERROR! Category could not be Updated !</span>";
+            $query = "UPDATE tbl_category
+                    SET
+                    name = '$name'
+                    WHERE id = '$id'";
+            $updated_row = $db->update($query);
+            if ($updated_row) {
+                echo "<span class='success'>Category Updated Successfully</span>";
+            } else {
+                echo "<span class='error'>ERROR! Category could not be Updated !</span>";
+            }
         }
     }
-}
 ?>
 
 <?php 

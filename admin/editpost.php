@@ -28,20 +28,49 @@
         $unique_image = substr(md5(time()), 0, 10).'.'.$file_ext;
         $uploaded_image = "upload/".$unique_image;
         
-        if ($title == "" || $cat == "" || $body == "" || $tags == "" || $author == "" || $file_name == "") {
+        if ($title == "" || $cat == "" || $body == "" || $tags == "" || $author == "") {
             echo "<span class='error'>Field must not be Empty !</span>";
-        } elseif ($file_size >1048567) {
-         echo "<span class='error'>Image Size should be less then 1MB!</span>";
-        } elseif (in_array($file_ext, $permited) === false) {
-         echo "<span class='error'>You can upload only:-".implode(', ', $permited)."</span>";
         } else {
-            move_uploaded_file($file_temp, $uploaded_image);
-            $query = "INSERT INTO tbl_post(cat, title, body, image, author, tags) VALUES('$cat', '$title', '$body', '$uploaded_image', '$author', '$tags')";
-            $inserted_rows = $db->insert($query);
-            if ($inserted_rows) {
-            echo "<span class='success'>Post Added Successfully.</span>";
+        if (!empty($file_name)) {
+            if ($file_size >1048567) {
+            echo "<span class='error'>Image Size should be less then 1MB!</span>";
+            } elseif (in_array($file_ext, $permited) === false) {
+            echo "<span class='error'>You can upload only:-".implode(', ', $permited)."</span>";
             } else {
-            echo "<span class='error'>Post Not Added !</span>";
+                move_uploaded_file($file_temp, $uploaded_image);
+                $query = "UPDATE tbl_post
+                SET
+                cat    = '$cat',
+                title  = '$title',
+                body   = '$body',
+                image  = '$uploaded_image',
+                author = '$author',
+                tags   = '$tags'
+                WHERE id = '$postid'
+                ";
+                $updated_rows = $db->update($query);
+                if ($updated_rows) {
+                echo "<span class='success'>Post Updated Successfully.</span>";
+                } else {
+                echo "<span class='error'>Post Not Updated !</span>";
+                }
+            }
+        } else {
+                $query = "UPDATE tbl_post
+                SET
+                cat    = '$cat',
+                title  = '$title',
+                body   = '$body',
+                author = '$author',
+                tags   = '$tags'
+                WHERE id='$postid'
+                ";
+                $updated_rows = $db->update($query);
+                if ($updated_rows) {
+                echo "<span class='success'>Post Updated Successfully.</span>";
+                } else {
+                echo "<span class='error'>Post Not Updated !</span>";
+                }
             }
         }
     }
@@ -52,7 +81,7 @@
     $getpost = $db->select($query);
         while ($postresult = $getpost->fetch_assoc()) {
 ?>             
-                 <form action="addpost.php" method="post" enctype="multipart/form-data">
+                 <form action="" method="post" enctype="multipart/form-data">
                     <table class="form">
                        
                         <tr>

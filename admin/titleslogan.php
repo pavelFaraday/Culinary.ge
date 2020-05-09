@@ -1,9 +1,30 @@
 ﻿<?php include 'inc/header.php'?>
 <?php include 'inc/sidebar.php'?>
-        <div class="grid_10">
-            <div class="box round first grid">
-                <h2>Update Site Title and Description</h2>
-                <div class="block sloginblock">               
+<style>
+    .leftside {
+        float:left;
+        width: 70%;
+    }
+    .rightside {
+        float:left;
+        width: 20%;
+    }
+    .rightside img {
+        width: 170px;
+        height: auto;
+    }
+</style>
+<div class="grid_10">
+    <div class="box round first grid">
+        <h2>Update Site Title and Description</h2>
+<?php 
+    $query = "select * from title_slogan where id=1";
+    $blog_title = $db->select($query);
+    if ($blog_title) {
+        while($result = $blog_title->fetch_assoc()) {
+?>
+        <div class="block sloginblock"> 
+            <div class="leftside">            
                  <form>
                     <table class="form">					
                         <tr>
@@ -11,7 +32,7 @@
                                 <label>Website Title</label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Enter Website Title..."  name="title" class="medium" />
+                                <input type="text" value="<?php echo $result['title']; ?>"  name="title" class="medium" />
                             </td>
                         </tr>
 						 <tr>
@@ -19,7 +40,15 @@
                                 <label>Website Slogan</label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Enter Website Slogan..." name="slogan" class="medium" />
+                                <input type="text" value="<?php echo $result['slogan']; ?>" name="slogan" class="medium" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Upload Logo</label>
+                            </td>
+                            <td>
+                                <input type="file" name="logo" />
                             </td>
                         </tr>
 						 
@@ -34,6 +63,11 @@
                     </table>
                     </form>
                 </div>
+                <div class="rigthside">
+                    <img src="<?php echo $result['logo']; ?>" alt="logo">
+                </div>
             </div>
+<?php } } ?>
         </div>
+    </div>
 <?php include 'inc/footer.php'?>

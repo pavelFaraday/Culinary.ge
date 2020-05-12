@@ -40,6 +40,7 @@
         }
     }
 ?>
+
                 <div class="block">               
                  <form action="addpost.php" method="post" enctype="multipart/form-data">
                     <table class="form">

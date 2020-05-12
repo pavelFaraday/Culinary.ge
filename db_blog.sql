@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2020 at 07:14 PM
+-- Generation Time: May 12, 2020 at 09:29 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -41,7 +41,49 @@ INSERT INTO `tbl_category` (`id`, `name`) VALUES
 (1, 'JAVA'),
 (2, 'PHP'),
 (3, 'HTML'),
-(4, 'CSS');
+(4, 'CSS'),
+(6, 'Vue.js'),
+(10, 'React.js'),
+(11, 'Angular.js');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_footer`
+--
+
+CREATE TABLE `tbl_footer` (
+  `id` int(11) NOT NULL,
+  `note` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_footer`
+--
+
+INSERT INTO `tbl_footer` (`id`, `note`) VALUES
+(1, 'Stack Exchange Inc; GF');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_page`
+--
+
+CREATE TABLE `tbl_page` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `body` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_page`
+--
+
+INSERT INTO `tbl_page` (`id`, `name`, `body`) VALUES
+(1, 'áƒ©áƒ•áƒ”áƒœ áƒ¨áƒ”áƒ¡áƒáƒ®áƒ”áƒ‘', '<p>áƒ¬áƒ”áƒ¡áƒ˜áƒ—, áƒ¨áƒ”áƒœ áƒ˜áƒ› áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡ áƒ£áƒœáƒ“áƒ áƒ”áƒ™áƒ£áƒ—áƒ•áƒœáƒáƒ“áƒ”, áƒ•áƒ˜áƒ¡áƒáƒª áƒ¡áƒ£áƒ áƒ—, áƒ áƒáƒ› áƒ›áƒáƒ— áƒ›áƒáƒ¡áƒáƒ–áƒ áƒ”áƒ‘áƒ”áƒ‘áƒ¡, áƒáƒ–áƒ áƒ”áƒ‘áƒ¡, áƒ˜áƒ“áƒ”áƒ”áƒ‘áƒ¡<strong> áƒ˜áƒ–áƒ˜áƒáƒ áƒ”áƒ‘áƒ“áƒœáƒ”áƒœ áƒ“áƒ áƒ£áƒ¡áƒ›áƒ”áƒœáƒ“áƒœáƒ”áƒœ áƒ¡áƒ®áƒ•áƒ”áƒ‘áƒ˜</strong>, áƒ•áƒ˜áƒ¡áƒáƒª áƒ“áƒ˜áƒ“áƒ˜ áƒ¡áƒáƒ¥áƒ›áƒ”áƒ”áƒ‘áƒ˜áƒ¡ áƒ¡áƒáƒ™áƒ”áƒ—áƒ”áƒ‘áƒšáƒáƒ“ áƒ›áƒ˜áƒ¡áƒ“áƒ”áƒ•áƒ”áƒœ áƒ®áƒáƒšáƒ›áƒ”.</p>\r\n<p><br />áƒáƒ›áƒ’áƒ•áƒáƒ  áƒžáƒ˜áƒ áƒáƒ•áƒœáƒ”áƒ‘áƒáƒ“ áƒ§áƒáƒ¤áƒœáƒ˜áƒ¡áƒáƒ—áƒ•áƒ˜áƒ¡ áƒ¨áƒ”áƒœ, áƒ¡áƒ£áƒš áƒ›áƒªáƒ˜áƒ áƒ”, áƒ£áƒœáƒ“áƒ áƒ˜áƒªáƒáƒ“áƒ”, áƒ®áƒáƒ¡áƒ˜áƒáƒ—áƒ˜áƒ¡ áƒ áƒ áƒ—áƒ•áƒ˜áƒ¡áƒ”áƒ‘áƒ”áƒ‘áƒ˜ áƒ£áƒœáƒ“áƒ áƒ’áƒáƒ’áƒáƒ©áƒœáƒ“áƒ”áƒ¡, áƒ£áƒœáƒ“áƒ áƒ˜áƒªáƒáƒ“áƒ”, áƒ¡áƒáƒ áƒ—áƒáƒ“ áƒ áƒáƒ¢áƒáƒ› áƒ£áƒ¡áƒ›áƒ”áƒœáƒ”áƒœ áƒ“áƒ áƒ áƒáƒ¢áƒáƒ› áƒ›áƒ˜áƒ¡áƒ“áƒ”áƒ•áƒ”áƒœ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ˜ áƒ•áƒ˜áƒœáƒ›áƒ”áƒ¡.</p>\r\n<p><br />áƒžáƒ˜áƒ áƒ•áƒ”áƒšáƒ˜, áƒ áƒáƒª áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡ áƒ›áƒáƒ—áƒ—áƒ•áƒ˜áƒ¡ áƒáƒ•áƒ¢áƒáƒ áƒ˜áƒ¢áƒ”áƒ¢áƒ£áƒš áƒžáƒ˜áƒ áƒ¨áƒ˜ áƒ˜áƒ–áƒ˜áƒ“áƒáƒ•áƒ— &ndash; áƒ˜áƒ¡áƒ˜áƒœáƒ˜ áƒšáƒ˜áƒ“áƒ”áƒ áƒ—áƒáƒœ áƒ’áƒáƒ áƒ™áƒ•áƒ”áƒ£áƒš áƒ¡áƒ£áƒšáƒ˜áƒ”áƒ  áƒ”áƒ áƒ—áƒáƒ‘áƒáƒ¡, áƒ¡áƒ£áƒšáƒ˜áƒ”áƒ  áƒœáƒáƒ—áƒ”áƒ¡áƒáƒáƒ‘áƒáƒ¡ áƒ’áƒ áƒ«áƒœáƒáƒ‘áƒ”áƒœ. áƒ¨áƒ”áƒœ áƒ¨áƒ”áƒ˜áƒ«áƒšáƒ”áƒ‘áƒ áƒ”áƒ¡ áƒ“áƒáƒ¬áƒ˜áƒœáƒáƒ£áƒ áƒ”áƒ‘áƒ£áƒšáƒ˜ áƒ˜áƒœáƒ“áƒ˜áƒ•áƒ˜áƒ“áƒ˜ áƒ›áƒ˜áƒ£áƒ¦áƒ”áƒ‘áƒ”áƒš áƒ“áƒ áƒ’áƒáƒ£áƒœáƒáƒ—áƒšáƒ”áƒ‘áƒ”áƒš, áƒ“áƒáƒ£áƒ®áƒ•áƒ”áƒ¬áƒ”áƒ•áƒáƒ• áƒáƒœ áƒ“áƒáƒ£áƒ›áƒ¡áƒáƒ®áƒ£áƒ áƒ”áƒ‘áƒ”áƒš áƒ¢áƒ˜áƒžáƒáƒ“ áƒ›áƒ˜áƒ’áƒáƒ©áƒœáƒ“áƒ”áƒ¡, áƒ—áƒ£áƒ›áƒªáƒ áƒ›áƒ˜áƒ£áƒ®áƒ”áƒ“áƒáƒ•áƒáƒ“ áƒ¨áƒ”áƒœáƒ˜ áƒ¬áƒáƒ áƒ›áƒáƒ“áƒ’áƒ”áƒœáƒ˜áƒ¡áƒ, áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ¡áƒ®áƒ•áƒ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡áƒ áƒ“áƒ áƒ¡áƒáƒ–áƒáƒ’áƒáƒ“áƒáƒ”áƒ‘áƒ˜áƒ¡ áƒ¡áƒáƒ™áƒ›áƒáƒáƒ“ áƒ¤áƒáƒ áƒ—áƒ áƒ›áƒáƒ¡áƒ”áƒ‘áƒ¨áƒ˜, áƒ¡áƒ£áƒšáƒ˜áƒ”áƒ áƒ˜ áƒ¡áƒ˜áƒáƒ®áƒšáƒáƒ•áƒ˜áƒ¡, áƒ”áƒ áƒ—áƒ˜áƒáƒœáƒáƒ‘áƒ˜áƒ¡ áƒ«áƒšáƒ˜áƒ”áƒ  áƒ’áƒáƒœáƒªáƒ“áƒáƒ¡ áƒáƒ«áƒ¦áƒ áƒáƒ•áƒ“áƒ”áƒ¡.<br />áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒáƒ›áƒ‘áƒáƒ‘áƒ¡ áƒ˜áƒ¡áƒ”áƒ— áƒ áƒáƒ›áƒ”áƒ¡ áƒ“áƒ áƒ˜áƒ¡áƒ”, áƒ áƒ˜áƒ¡ áƒ—áƒ¥áƒ›áƒáƒ¡áƒáƒª áƒ¡áƒ®áƒ•áƒ”áƒ‘áƒ˜ áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒáƒžáƒ˜áƒ áƒ”áƒ‘áƒ”áƒœ, áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒ¡áƒ£áƒ áƒ— áƒ™áƒ˜áƒ“áƒ”áƒª, áƒšáƒáƒ›áƒáƒ‘áƒ”áƒœ áƒ’áƒáƒ áƒ™áƒ•áƒ”áƒ£áƒšáƒ¬áƒ˜áƒšáƒáƒ“ áƒ áƒáƒ› áƒ’áƒáƒ›áƒáƒ®áƒáƒ¢áƒáƒœ, áƒ›áƒáƒ’áƒ áƒáƒ› áƒáƒœ áƒ•áƒ”áƒ  áƒáƒœ áƒáƒ  áƒ’áƒáƒ›áƒáƒ¡áƒ“áƒ˜áƒ— &ndash; áƒ áƒáƒ¦áƒáƒªáƒáƒ¡ áƒáƒ™áƒšáƒ”áƒ‘áƒ”áƒœ áƒ“áƒ áƒ˜áƒ¡áƒ” áƒ¡áƒ áƒ£áƒšáƒ¤áƒáƒ¡áƒáƒ•áƒœáƒáƒ“ áƒ•áƒ”áƒ  áƒáƒ§áƒáƒšáƒ˜áƒ‘áƒ”áƒ‘áƒ”áƒœ. áƒáƒ›áƒáƒ¡áƒ—áƒáƒœ áƒ”áƒ áƒ—áƒáƒ“ áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒáƒ”áƒ áƒ—áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡ áƒ›áƒ áƒáƒ•áƒáƒšáƒ—áƒ áƒ¡áƒáƒ—áƒ¥áƒ›áƒ”áƒšáƒ¡, áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒ«áƒ˜áƒ áƒ˜áƒ¡áƒ«áƒ˜áƒ áƒáƒ‘áƒáƒ›áƒ“áƒ” áƒ”áƒ®áƒ”áƒ‘áƒ áƒáƒ›áƒáƒ áƒ©áƒ”áƒ£áƒšáƒ˜ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ£áƒ áƒ˜ áƒ¯áƒ’áƒ£áƒ¤áƒ˜áƒ¡ áƒ¤áƒ£áƒœáƒ“áƒáƒ›áƒ”áƒœáƒ¢áƒ£áƒ  áƒ›áƒáƒ—áƒ®áƒáƒ•áƒœáƒ˜áƒšáƒ”áƒ‘áƒ”áƒ‘áƒ¡ áƒ˜áƒ’áƒ˜ áƒšáƒáƒ™áƒáƒœáƒ£áƒ áƒáƒ“, áƒ£áƒ‘áƒ áƒáƒšáƒáƒ“, áƒ—áƒáƒ•áƒ˜áƒ¡áƒ˜ áƒ®áƒáƒšáƒ®áƒ˜áƒ¡ áƒ”áƒœáƒáƒ–áƒ”, áƒ›áƒáƒ—áƒ—áƒ•áƒ˜áƒ¡ áƒ›áƒ˜áƒ¡áƒáƒ¦áƒ”áƒ‘áƒ˜ áƒ“áƒ˜áƒáƒšáƒ”áƒ¥áƒ¢áƒ˜áƒ—, áƒšáƒ”áƒ¥áƒ¡áƒ˜áƒ™áƒáƒœáƒ˜áƒ—, áƒáƒ¦áƒ•áƒ˜áƒ•áƒ”áƒ‘áƒ¡ áƒ˜áƒ› áƒ”áƒ›áƒáƒªáƒ˜áƒ”áƒ‘áƒ¡, áƒ áƒáƒ¡áƒáƒª áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ˜ áƒ›áƒ˜áƒ©áƒ•áƒ”áƒ£áƒšáƒ”áƒ‘áƒ˜ áƒáƒ áƒ˜áƒáƒœ áƒ›áƒ˜áƒ˜áƒ¦áƒáƒœ áƒ›áƒ˜áƒ¡áƒ’áƒáƒœ. áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ—áƒáƒ•áƒ˜áƒ¡ áƒ¡áƒáƒªáƒ˜áƒáƒšáƒ£áƒ  áƒ¯áƒ’áƒ£áƒ¤áƒ¡ áƒáƒ®áƒáƒš, áƒ¡áƒ áƒ£áƒšáƒ˜áƒáƒ“ áƒ¡áƒ®áƒ•áƒáƒœáƒáƒ˜áƒ áƒáƒ“ áƒ“áƒ áƒ£áƒœáƒ˜áƒ™áƒáƒšáƒ£áƒ áƒáƒ“ áƒ¨áƒ”áƒ™áƒáƒ–áƒ›áƒ£áƒš áƒ”áƒ›áƒáƒªáƒ˜áƒ£áƒ  áƒ›áƒ“áƒ’áƒáƒ›áƒáƒ áƒ”áƒáƒ‘áƒáƒ¡ áƒ“áƒ áƒ¨áƒ”áƒ’áƒ áƒ«áƒœáƒ”áƒ‘áƒ”áƒ‘áƒ¡ áƒ¡áƒ—áƒáƒ•áƒáƒ–áƒáƒ‘áƒ¡ &ndash; áƒ›áƒ“áƒ’áƒáƒ›áƒáƒ áƒ”áƒ‘áƒáƒ¡, áƒ áƒáƒ›áƒ”áƒšáƒ˜áƒª áƒ¯áƒ’áƒ£áƒ¤áƒ¡ áƒ¬áƒ˜áƒœáƒáƒ›áƒ«áƒ¦áƒáƒšáƒ˜áƒ¡ áƒ¡áƒ˜áƒ¢áƒ§áƒ•áƒ”áƒ‘áƒ˜áƒ¡ áƒ’áƒáƒ’áƒáƒœáƒ”áƒ‘áƒ˜áƒ¡ áƒ¨áƒ”áƒ›áƒ“áƒ”áƒ’ áƒ”áƒ£áƒ¤áƒšáƒ”áƒ‘áƒ.</p>'),
+(2, 'áƒ•áƒ”áƒ áƒ˜áƒ¤áƒ˜áƒ™áƒáƒªáƒ˜áƒ', '<p>áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒ«áƒ˜áƒ áƒ˜áƒ¡áƒ«áƒ˜áƒ áƒáƒ‘áƒáƒ›áƒ“áƒ” áƒ”áƒ®áƒ”áƒ‘áƒ áƒáƒ›áƒáƒ áƒ©áƒ”áƒ£áƒšáƒ˜ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ£áƒ áƒ˜ áƒ¯áƒ’áƒ£áƒ¤áƒ˜áƒ¡ áƒ¤áƒ£áƒœáƒ“áƒáƒ›áƒ”áƒœáƒ¢áƒ£áƒ  áƒ›áƒáƒ—áƒ®áƒáƒ•áƒœáƒ˜áƒšáƒ”áƒ‘áƒ”áƒ‘áƒ¡ áƒ˜áƒ’áƒ˜ áƒšáƒáƒ™áƒáƒœáƒ£áƒ áƒáƒ“, áƒ£áƒ‘áƒ áƒáƒšáƒáƒ“, áƒ—áƒáƒ•áƒ˜áƒ¡áƒ˜ áƒ®áƒáƒšáƒ®áƒ˜áƒ¡ áƒ”áƒœáƒáƒ–áƒ”, áƒ›áƒáƒ—áƒ—áƒ•áƒ˜áƒ¡ áƒ›áƒ˜áƒ¡áƒáƒ¦áƒ”áƒ‘áƒ˜ áƒ“áƒ˜áƒáƒšáƒ”áƒ¥áƒ¢áƒ˜áƒ—, áƒšáƒ”áƒ¥áƒ¡áƒ˜áƒ™áƒáƒœáƒ˜áƒ—, áƒáƒ¦áƒ•áƒ˜áƒ•áƒ”áƒ‘áƒ¡ áƒ˜áƒ› áƒ”áƒ›áƒáƒªáƒ˜áƒ”áƒ‘áƒ¡, áƒ áƒáƒ¡áƒáƒª áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ˜ áƒ›áƒ˜áƒ©áƒ•áƒ”áƒ£áƒšáƒ”áƒ‘áƒ˜ áƒáƒ áƒ˜áƒáƒœ áƒ›áƒ˜áƒ˜áƒ¦áƒáƒœ áƒ›áƒ˜áƒ¡áƒ’áƒáƒœ. áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ—áƒáƒ•áƒ˜áƒ¡ áƒ¡áƒáƒªáƒ˜áƒáƒšáƒ£áƒ  áƒ¯áƒ’áƒ£áƒ¤áƒ¡ áƒáƒ®áƒáƒš, áƒ¡áƒ áƒ£áƒšáƒ˜áƒáƒ“ áƒ¡áƒ®áƒ•áƒáƒœáƒáƒ˜áƒ áƒáƒ“ áƒ“áƒ áƒ£áƒœáƒ˜áƒ™áƒáƒšáƒ£áƒ áƒáƒ“ áƒ¨áƒ”áƒ™áƒáƒ–áƒ›áƒ£áƒš áƒ”áƒ›áƒáƒªáƒ˜áƒ£áƒ  áƒ›áƒ“áƒ’áƒáƒ›áƒáƒ áƒ”áƒáƒ‘áƒáƒ¡ áƒ“áƒ áƒ¨áƒ”áƒ’áƒ áƒ«áƒœáƒ”áƒ‘áƒ”áƒ‘áƒ¡ áƒ¡áƒ—áƒáƒ•áƒáƒ–áƒáƒ‘áƒ¡ &ndash; áƒ›áƒ“áƒ’áƒáƒ›áƒáƒ áƒ”áƒ‘áƒáƒ¡, áƒ áƒáƒ›áƒ”áƒšáƒ˜áƒª áƒ¯áƒ’áƒ£áƒ¤áƒ¡ áƒ¬áƒ˜áƒœáƒáƒ›áƒ«áƒ¦áƒáƒšáƒ˜áƒ¡ áƒ¡áƒ˜áƒ¢áƒ§áƒ•áƒ”áƒ‘áƒ˜áƒ¡ áƒ’áƒáƒ’áƒáƒœáƒ”áƒ‘áƒ˜áƒ¡ áƒ¨áƒ”áƒ›áƒ“áƒ”áƒ’ áƒ”áƒ£áƒ¤áƒšáƒ”áƒ‘áƒ.</p>'),
+(3, 'FUQ', '<p>áƒ¬áƒ”áƒ¡áƒ˜áƒ—, áƒ¨áƒ”áƒœ áƒ˜áƒ› áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡ áƒ£áƒœáƒ“áƒ áƒ”áƒ™áƒ£áƒ—áƒ•áƒœáƒáƒ“áƒ”, áƒ•áƒ˜áƒ¡áƒáƒª áƒ¡áƒ£áƒ áƒ—, áƒ áƒáƒ› áƒ›áƒáƒ— áƒ›áƒáƒ¡áƒáƒ–áƒ áƒ”áƒ‘áƒ”áƒ‘áƒ¡, áƒáƒ–áƒ áƒ”áƒ‘áƒ¡, áƒ˜áƒ“áƒ”áƒ”áƒ‘áƒ¡ áƒ˜áƒ–áƒ˜áƒáƒ áƒ”áƒ‘áƒ“áƒœáƒ”áƒœ áƒ“áƒ áƒ£áƒ¡áƒ›áƒ”áƒœáƒ“áƒœáƒ”áƒœ áƒ¡áƒ®áƒ•áƒ”áƒ‘áƒ˜, áƒ•áƒ˜áƒ¡áƒáƒª áƒ“áƒ˜áƒ“áƒ˜ áƒ¡áƒáƒ¥áƒ›áƒ”áƒ”áƒ‘áƒ˜áƒ¡ áƒ¡áƒáƒ™áƒ”áƒ—áƒ”áƒ‘áƒšáƒáƒ“ áƒ›áƒ˜áƒ¡áƒ“áƒ”áƒ•áƒ”áƒœ áƒ®áƒáƒšáƒ›áƒ”.<br />áƒáƒ›áƒ’áƒ•áƒáƒ  áƒžáƒ˜áƒ áƒáƒ•áƒœáƒ”áƒ‘áƒáƒ“ áƒ§áƒáƒ¤áƒœáƒ˜áƒ¡áƒáƒ—áƒ•áƒ˜áƒ¡ áƒ¨áƒ”áƒœ, áƒ¡áƒ£áƒš áƒ›áƒªáƒ˜áƒ áƒ”, áƒ£áƒœáƒ“áƒ áƒ˜áƒªáƒáƒ“áƒ”, áƒ®áƒáƒ¡áƒ˜áƒáƒ—áƒ˜áƒ¡ áƒ áƒ áƒ—áƒ•áƒ˜áƒ¡áƒ”áƒ‘áƒ”áƒ‘áƒ˜ áƒ£áƒœáƒ“áƒ áƒ’áƒáƒ’áƒáƒ©áƒœáƒ“áƒ”áƒ¡, áƒ£áƒœáƒ“áƒ áƒ˜áƒªáƒáƒ“áƒ”, áƒ¡áƒáƒ áƒ—áƒáƒ“ áƒ áƒáƒ¢áƒáƒ› áƒ£áƒ¡áƒ›áƒ”áƒœáƒ”áƒœ áƒ“áƒ áƒ áƒáƒ¢áƒáƒ› áƒ›áƒ˜áƒ¡áƒ“áƒ”áƒ•áƒ”áƒœ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ˜ áƒ•áƒ˜áƒœáƒ›áƒ”áƒ¡.<br />áƒžáƒ˜áƒ áƒ•áƒ”áƒšáƒ˜, áƒ áƒáƒª áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡ áƒ›áƒáƒ—áƒ—áƒ•áƒ˜áƒ¡ áƒáƒ•áƒ¢áƒáƒ áƒ˜áƒ¢áƒ”áƒ¢áƒ£áƒš áƒžáƒ˜áƒ áƒ¨áƒ˜ áƒ˜áƒ–áƒ˜áƒ“áƒáƒ•áƒ— &ndash; áƒ˜áƒ¡áƒ˜áƒœáƒ˜ áƒšáƒ˜áƒ“áƒ”áƒ áƒ—áƒáƒœ áƒ’áƒáƒ áƒ™áƒ•áƒ”áƒ£áƒš áƒ¡áƒ£áƒšáƒ˜áƒ”áƒ  áƒ”áƒ áƒ—áƒáƒ‘áƒáƒ¡, áƒ¡áƒ£áƒšáƒ˜áƒ”áƒ  áƒœáƒáƒ—áƒ”áƒ¡áƒáƒáƒ‘áƒáƒ¡ áƒ’áƒ áƒ«áƒœáƒáƒ‘áƒ”áƒœ. áƒ¨áƒ”áƒœ áƒ¨áƒ”áƒ˜áƒ«áƒšáƒ”áƒ‘áƒ áƒ”áƒ¡ áƒ“áƒáƒ¬áƒ˜áƒœáƒáƒ£áƒ áƒ”áƒ‘áƒ£áƒšáƒ˜ áƒ˜áƒœáƒ“áƒ˜áƒ•áƒ˜áƒ“áƒ˜ áƒ›áƒ˜áƒ£áƒ¦áƒ”áƒ‘áƒ”áƒš áƒ“áƒ áƒ’áƒáƒ£áƒœáƒáƒ—áƒšáƒ”áƒ‘áƒ”áƒš, áƒ“áƒáƒ£áƒ®áƒ•áƒ”áƒ¬áƒ”áƒ•áƒáƒ• áƒáƒœ áƒ“áƒáƒ£áƒ›áƒ¡áƒáƒ®áƒ£áƒ áƒ”áƒ‘áƒ”áƒš áƒ¢áƒ˜áƒžáƒáƒ“ áƒ›áƒ˜áƒ’áƒáƒ©áƒœáƒ“áƒ”áƒ¡, áƒ—áƒ£áƒ›áƒªáƒ áƒ›áƒ˜áƒ£áƒ®áƒ”áƒ“áƒáƒ•áƒáƒ“ áƒ¨áƒ”áƒœáƒ˜ áƒ¬áƒáƒ áƒ›áƒáƒ“áƒ’áƒ”áƒœáƒ˜áƒ¡áƒ, áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ¡áƒ®áƒ•áƒ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡áƒ áƒ“áƒ áƒ¡áƒáƒ–áƒáƒ’áƒáƒ“áƒáƒ”áƒ‘áƒ˜áƒ¡ áƒ¡áƒáƒ™áƒ›áƒáƒáƒ“ áƒ¤áƒáƒ áƒ—áƒ áƒ›áƒáƒ¡áƒ”áƒ‘áƒ¨áƒ˜, áƒ¡áƒ£áƒšáƒ˜áƒ”áƒ áƒ˜ áƒ¡áƒ˜áƒáƒ®áƒšáƒáƒ•áƒ˜áƒ¡, áƒ”áƒ áƒ—áƒ˜áƒáƒœáƒáƒ‘áƒ˜áƒ¡ áƒ«áƒšáƒ˜áƒ”áƒ  áƒ’áƒáƒœáƒªáƒ“áƒáƒ¡ áƒáƒ«áƒ¦áƒ áƒáƒ•áƒ“áƒ”áƒ¡.<br />áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒáƒ›áƒ‘áƒáƒ‘áƒ¡ áƒ˜áƒ¡áƒ”áƒ— áƒ áƒáƒ›áƒ”áƒ¡ áƒ“áƒ áƒ˜áƒ¡áƒ”, áƒ áƒ˜áƒ¡ áƒ—áƒ¥áƒ›áƒáƒ¡áƒáƒª áƒ¡áƒ®áƒ•áƒ”áƒ‘áƒ˜ áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒáƒžáƒ˜áƒ áƒ”áƒ‘áƒ”áƒœ, áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒ¡áƒ£áƒ áƒ— áƒ™áƒ˜áƒ“áƒ”áƒª, áƒšáƒáƒ›áƒáƒ‘áƒ”áƒœ áƒ’áƒáƒ áƒ™áƒ•áƒ”áƒ£áƒšáƒ¬áƒ˜áƒšáƒáƒ“ áƒ áƒáƒ› áƒ’áƒáƒ›áƒáƒ®áƒáƒ¢áƒáƒœ, áƒ›áƒáƒ’áƒ áƒáƒ› áƒáƒœ áƒ•áƒ”áƒ  áƒáƒœ áƒáƒ  áƒ’áƒáƒ›áƒáƒ¡áƒ“áƒ˜áƒ— &ndash; áƒ áƒáƒ¦áƒáƒªáƒáƒ¡ áƒáƒ™áƒšáƒ”áƒ‘áƒ”áƒœ áƒ“áƒ áƒ˜áƒ¡áƒ” áƒ¡áƒ áƒ£áƒšáƒ¤áƒáƒ¡áƒáƒ•áƒœáƒáƒ“ áƒ•áƒ”áƒ  áƒáƒ§áƒáƒšáƒ˜áƒ‘áƒ”áƒ‘áƒ”áƒœ. áƒáƒ›áƒáƒ¡áƒ—áƒáƒœ áƒ”áƒ áƒ—áƒáƒ“ áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒáƒ”áƒ áƒ—áƒ˜áƒáƒœáƒ”áƒ‘áƒ¡ áƒ›áƒ áƒáƒ•áƒáƒšáƒ—áƒ áƒ¡áƒáƒ—áƒ¥áƒ›áƒ”áƒšáƒ¡, áƒ—áƒ˜áƒ—áƒ¥áƒáƒ¡ áƒ«áƒ˜áƒ áƒ˜áƒ¡áƒ«áƒ˜áƒ áƒáƒ‘áƒáƒ›áƒ“áƒ” áƒ”áƒ®áƒ”áƒ‘áƒ áƒáƒ›áƒáƒ áƒ©áƒ”áƒ£áƒšáƒ˜ áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ£áƒ áƒ˜ áƒ¯áƒ’áƒ£áƒ¤áƒ˜áƒ¡ áƒ¤áƒ£áƒœáƒ“áƒáƒ›áƒ”áƒœáƒ¢áƒ£áƒ  áƒ›áƒáƒ—áƒ®áƒáƒ•áƒœáƒ˜áƒšáƒ”áƒ‘áƒ”áƒ‘áƒ¡ áƒ˜áƒ’áƒ˜ áƒšáƒáƒ™áƒáƒœáƒ£áƒ áƒáƒ“, áƒ£áƒ‘áƒ áƒáƒšáƒáƒ“, áƒ—áƒáƒ•áƒ˜áƒ¡áƒ˜ áƒ®áƒáƒšáƒ®áƒ˜áƒ¡ áƒ”áƒœáƒáƒ–áƒ”, áƒ›áƒáƒ—áƒ—áƒ•áƒ˜áƒ¡ áƒ›áƒ˜áƒ¡áƒáƒ¦áƒ”áƒ‘áƒ˜ áƒ“áƒ˜áƒáƒšáƒ”áƒ¥áƒ¢áƒ˜áƒ—, áƒšáƒ”áƒ¥áƒ¡áƒ˜áƒ™áƒáƒœáƒ˜áƒ—, áƒáƒ¦áƒ•áƒ˜áƒ•áƒ”áƒ‘áƒ¡ áƒ˜áƒ› áƒ”áƒ›áƒáƒªáƒ˜áƒ”áƒ‘áƒ¡, áƒ áƒáƒ¡áƒáƒª áƒáƒ“áƒáƒ›áƒ˜áƒáƒœáƒ”áƒ‘áƒ˜ áƒ›áƒ˜áƒ©áƒ•áƒ”áƒ£áƒšáƒ”áƒ‘áƒ˜ áƒáƒ áƒ˜áƒáƒœ áƒ›áƒ˜áƒ˜áƒ¦áƒáƒœ áƒ›áƒ˜áƒ¡áƒ’áƒáƒœ. áƒšáƒ˜áƒ“áƒ”áƒ áƒ˜ áƒ—áƒáƒ•áƒ˜áƒ¡ áƒ¡áƒáƒªáƒ˜áƒáƒšáƒ£áƒ  áƒ¯áƒ’áƒ£áƒ¤áƒ¡ áƒáƒ®áƒáƒš, áƒ¡áƒ áƒ£áƒšáƒ˜áƒáƒ“ áƒ¡áƒ®áƒ•áƒáƒœáƒáƒ˜áƒ áƒáƒ“ áƒ“áƒ áƒ£áƒœáƒ˜áƒ™áƒáƒšáƒ£áƒ áƒáƒ“ áƒ¨áƒ”áƒ™áƒáƒ–áƒ›áƒ£áƒš áƒ”áƒ›áƒáƒªáƒ˜áƒ£áƒ  áƒ›áƒ“áƒ’áƒáƒ›áƒáƒ áƒ”áƒáƒ‘áƒáƒ¡ áƒ“áƒ áƒ¨áƒ”áƒ’áƒ áƒ«áƒœáƒ”áƒ‘áƒ”áƒ‘áƒ¡ áƒ¡áƒ—áƒáƒ•áƒáƒ–áƒáƒ‘áƒ¡ &ndash; áƒ›áƒ“áƒ’áƒáƒ›áƒáƒ áƒ”áƒ‘áƒáƒ¡, áƒ áƒáƒ›áƒ”áƒšáƒ˜áƒª áƒ¯áƒ’áƒ£áƒ¤áƒ¡ áƒ¬áƒ˜áƒœáƒáƒ›áƒ«áƒ¦áƒáƒšáƒ˜áƒ¡ áƒ¡áƒ˜áƒ¢áƒ§áƒ•áƒ”áƒ‘áƒ˜áƒ¡ áƒ’áƒáƒ’áƒáƒœáƒ”áƒ‘áƒ˜áƒ¡ áƒ¨áƒ”áƒ›áƒ“áƒ”áƒ’ áƒ”áƒ£áƒ¤áƒšáƒ”áƒ‘áƒ.</p>');
 
 -- --------------------------------------------------------
 
@@ -65,12 +107,28 @@ CREATE TABLE `tbl_post` (
 --
 
 INSERT INTO `tbl_post` (`id`, `cat`, `title`, `body`, `image`, `author`, `tags`, `date`) VALUES
-(1, 1, 'Our post title here - java', '<p> Our psot..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>\r\n\r\n<p> Our psot..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>', 'post1.jpg', 'Delowar', 'java, programming', '2020-05-01 17:47:23'),
-(2, 2, 'Our post title here - php', '<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>\r\n\r\n<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>', 'post2.png', 'Delowar', 'php, programming', '2020-05-01 17:47:23'),
-(3, 3, 'html post title here', '<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>\r\n\r\n<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>', 'post1.jpg', 'Admin', 'html', '2020-05-01 17:52:52'),
-(4, 4, 'Css post will be go here', '<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>\r\n\r\n<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>', 'post1.jpg', 'Admin', 'css', '2020-05-01 17:52:52'),
-(5, 1, 'Java Category Data', '<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>\r\n\r\n<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>', 'post1.jpg', 'Admin', 'java', '2020-05-01 18:00:08'),
-(6, 2, 'PHP Category data', '<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>\r\n\r\n<p> Our post..Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here.Some text will be go here. </p>', 'post1.jpg', 'Admin', 'php', '2020-05-01 18:00:08');
+(17, 2, 'Mikky Mouse', '<p>Why should I use TinyPNG?<br />PNG is useful because it&rsquo;s the only widely supported format that can store partially transparent images. The format uses compression, but the files can still be large. Use TinyPNG to shrink images for your apps and sites. It will use less bandwidth and load faster.</p>', 'upload/6ed1766b41.png', 'Tbilisi', 'Panda', '2020-05-09 19:01:13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_social`
+--
+
+CREATE TABLE `tbl_social` (
+  `id` int(11) NOT NULL,
+  `fb` varchar(255) NOT NULL,
+  `tw` varchar(255) NOT NULL,
+  `ln` varchar(255) NOT NULL,
+  `gp` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_social`
+--
+
+INSERT INTO `tbl_social` (`id`, `fb`, `tw`, `ln`, `gp`) VALUES
+(1, 'https://www.facebook.com/galapagos.ge/', 'https://twitter.com/', 'https://www.linkedin.com/', 'https://www.google.com/');
 
 -- --------------------------------------------------------
 
@@ -89,7 +147,27 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id`, `username`, `password`) VALUES
-(1, 'admin', '202cb962ac59075b964b07152d234b70');
+(2, 'admin', '202cb962ac59075b964b07152d234b70');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `title_slogan`
+--
+
+CREATE TABLE `title_slogan` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `slogan` varchar(255) NOT NULL,
+  `logo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `title_slogan`
+--
+
+INSERT INTO `title_slogan` (`id`, `title`, `slogan`, `logo`) VALUES
+(1, 'Georgia &amp; Backery', 'Tbilisi Live', 'upload/logo.png');
 
 --
 -- Indexes for dumped tables
@@ -102,15 +180,39 @@ ALTER TABLE `tbl_category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_footer`
+--
+ALTER TABLE `tbl_footer`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_page`
+--
+ALTER TABLE `tbl_page`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_post`
 --
 ALTER TABLE `tbl_post`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_social`
+--
+ALTER TABLE `tbl_social`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `title_slogan`
+--
+ALTER TABLE `title_slogan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -121,18 +223,42 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `tbl_footer`
+--
+ALTER TABLE `tbl_footer`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tbl_page`
+--
+ALTER TABLE `tbl_page`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_post`
 --
 ALTER TABLE `tbl_post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `tbl_social`
+--
+ALTER TABLE `tbl_social`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `title_slogan`
+--
+ALTER TABLE `title_slogan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 

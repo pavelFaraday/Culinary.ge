@@ -9,9 +9,24 @@
         $id = $_GET['pageid'];
     }
 ?>
+
+<style>
+    .actiondel {
+        margin-left: 10px;
+    }
+    .actiondel a {
+        border: 1px solid #ddd;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 4px 10px;
+        font-weight: normal;
+        background: #ff0000;
+    }
+</style>
         <div class="grid_10">
             <div class="box round first grid">
-                <h2>Page</h2>
+                <h2>Update Page</h2>
 
 <?php 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -66,7 +81,8 @@
 						<tr>
                             <td></td>
                             <td>
-                                <input type="submit" name="submit" Value="Save" />
+                                <input type="submit" name="submit" Value="Update" />
+                                <span class="actiondel"><a onclick="return confirm('Are you sure to Delete the Page?');" href="deletepage.php?delpage=<?php echo $result['id']; ?>">Delete</a></span>
                             </td>
                         </tr>
                     </table>

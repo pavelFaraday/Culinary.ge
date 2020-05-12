@@ -5,7 +5,6 @@
 
 <?php include '../config/config.php'?>
 <?php include '../lib/Database.php'?>
-<?php include '../helpers/format.php'?>
 
 <?php 
 	$db = new Database();

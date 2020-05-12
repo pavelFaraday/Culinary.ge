@@ -3,7 +3,7 @@
         <div class="grid_10">
             <div class="box round first grid">
                 <h2>Add New Post</h2>
-
+// add image
 <?php 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $title  = mysqli_real_escape_string($db->link, $_POST['title']);

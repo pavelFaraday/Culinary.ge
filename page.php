@@ -22,6 +22,8 @@
 				<?php echo $result['body']; ?>
 	</div>
 </div>
+
 <?php } } else { header("Location:404.php");} ?>	
+
 <?php include 'inc/sidebar.php'?>
 <?php include 'inc/footer.php'?>
